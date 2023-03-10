@@ -1,0 +1,607 @@
+/* ----------------------------------
+
+Name: main.css
+Version: 1.0
+
+------------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background: #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Typograpy */
+.h1-w {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.h2-w {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.p-17-w {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.h3-bk {
+    font-size: 17px;
+    font-weight: 700;
+    color: #222d39;
+    margin: 0;
+    padding: 0;
+}
+
+.h3-blk-sb {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222d39;
+    margin: 0;
+    padding: 0;
+}
+
+.p-w {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.p-bk {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.span-sm {
+    font-size: 14px;
+    font-weight: 300;
+    color: #677294;
+    margin: 0;
+    padding: 0;
+}
+
+/* Padding & Margin */
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.m-section-120 {
+    margin: 120px 0;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-15 {
+    margin-top: 25px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.w-80 {
+    width: 200px;
+}
+
+/* Box Shadow */
+.bx-shw {
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-white {
+    background: rgb(254, 233, 98);
+    background: linear-gradient(90deg, rgba(254, 233, 98, 1) 0%, rgba(249, 76, 84, 1) 50%, rgba(149, 36, 217, 1) 100%);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.btn-white:hover {
+    transform: translateY(-10px);
+    color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.btn-color {
+    background: rgb(254, 233, 98);
+    background: linear-gradient(90deg, rgba(254, 233, 98, 1) 0%, rgba(249, 76, 84, 1) 50%, rgba(149, 36, 217, 1) 100%);
+    box-shadow: 1px 1px 25px 0px rgba(182, 147, 199, 0.17);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.btn-color:hover {
+    color: #ffffff;
+    transform: translateY(-10px);
+}
+
+/* Animation */
+
+.upDown {
+    animation: up-down 2s infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+._anim-show {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .8s ease-in-out;
+}
+
+._anim-items._active ._anim-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*--------------------------------------------------
+[Navbar]
+--------------------------------------------------*/
+.navbar {
+    padding: 5px 0;
+}
+
+.navbar .nav-item {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #0031e1;
+}
+
+/*--------------------------------------------------
+[Word Slider]
+--------------------------------------------------*/
+.slider {
+    background: url(../images/polygonal-16.jpg) center center no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.slider .container {
+    position: relative;
+    height: 100%;
+}
+
+.home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slider .col-lg-7 {
+    height: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.slider .image {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*--------------------------------------------------
+[About]
+--------------------------------------------------*/
+.about {
+    position: relative;
+    background: #ffffff;
+}
+
+.image.pr-4 {
+    padding-right: 0 !important;
+}
+
+/*--------------------------------------------------
+[Features]
+--------------------------------------------------*/
+.features {
+    background: #f6f5fb;
+    padding: 120px 0;
+}
+
+/*--------------------------------------------------
+[Contact]
+--------------------------------------------------*/
+.contact {
+    background: url(../images/Cosmic-Gradient-14.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.contact .heading {
+    margin-bottom: 50px;
+}
+
+.contact .heading h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contact .heading p {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+}
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact button.btn {
+    box-shadow: 0px 15px 51px 0px rgba(0, 0, 0, 0.24);
+    padding: 10px 45px;
+    border-radius: 45px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-image: inherit;
+    color: #ffffff;
+    transition: border .8s ease;
+    box-sizing: border-box;
+}
+
+.contact button.btn:hover {
+    border: solid 2px rgba(250, 250, 250, .3);
+}
+
+/*--------------------------------------------------
+[Footer]
+--------------------------------------------------*/
+.footer {
+    background: #ffffff;
+    padding: 40px 0;
+}
+
+.footer h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+    color: #000000;
+}
+
+
+/*--------------------------------------------------
+[Page Loading]
+--------------------------------------------------*/
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../fonts/preloader.svg") center no-repeat #fff;
+}
+
+/*--------------------------------------------------
+[Page Settings]
+--------------------------------------------------*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar {
+        background: -webkit-linear-gradient(top left, #323232 0%, #000000 100%) !important;
+        padding: 30px;
+    }
+
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+
+    .slider {
+        height: auto;
+        padding: 160px 0 120px 0;
+        text-align: center;
+    }
+
+    .slider .text {
+        margin-bottom: 50px;
+    }
+
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .image {
+        margin-bottom: 50px;
+    }
+
+    .features {
+        text-align: center;
+        padding: 120px 0 80px 0;
+    }
+
+    .features .box {
+        margin-bottom: 40px;
+    }
+
+    .about .work-img {
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .benefits {
+        margin-bottom: 80px;
+    }
+
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+
+    .team {
+        margin-bottom: 80px;
+    }
+
+    .team .box {
+        margin-bottom: 40px;
+    }
+
+    .team .content img {
+        width: 100%;
+    }
+
+    .testimonials .control {
+        display: none;
+    }
+
+    .price {
+        margin-bottom: 80px;
+    }
+
+    .price .box {
+        margin-bottom: 40px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .navbar {
+        background: -webkit-linear-gradient(top left, #525252 0%, #000000 100%) !important;
+        padding: 30px;
+    }
+
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+
+    .slider {
+        height: auto;
+        padding: 120px 0 120px 0;
+        text-align: center;
+    }
+
+    .slider .text {
+        margin-bottom: 50px;
+    }
+
+    .slider .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .image {
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .features {
+        text-align: center;
+        padding: 120px 0 80px 0;
+    }
+
+    .features .box {
+        margin-bottom: 40px;
+    }
+
+    .about .work-img {
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .benefits {
+        margin-bottom: 80px;
+    }
+
+    .benefits .box {
+        margin-bottom: 40px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: -webkit-linear-gradient(top left, #252525 0%, #000000 100%) !important;
+        padding: 30px;
+    }
+
+    .navbar .nav-item {
+        margin: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .navbar .nav-item .nav-link {
+        margin: 0;
+    }
+
+    .slider {
+        height: auto;
+        padding: 120px 0 0 0;
+        text-align: center;
+    }
+
+    .slider .text {
+        margin-bottom: 50px;
+    }
+
+    .slider .home {
+        position: relative;
+    }
+
+    .slider .image {
+        position: relative;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about .image {
+        margin-bottom: 50px;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+}
